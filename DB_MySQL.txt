@@ -1,0 +1,26 @@
+create database cinesunidos
+use cinesunidos
+
+CREATE TABLE `boletoscine` (
+  `nroFactura` int NOT NULL,
+  `nombrePelicula` varchar(100) NOT NULL,
+  `CICliente` varchar(100) NOT NULL,
+  `nombreCliente` varchar(100) NOT NULL,
+  `apellidoCliente` varchar(100) NOT NULL,
+  `sexoC` char(1) NOT NULL,
+  `edad` int NOT NULL,
+  `tipoEstudiante` char(1) NOT NULL,
+  `diaSemana` char(4) NOT NULL,
+  `fechaDia` int NOT NULL,
+  `fechaMes` int NOT NULL,
+  `fechaAño` int NOT NULL,
+  `cantidadBoletos` int NOT NULL,
+  `precioBoleto` int NOT NULL,
+  `totalPagar` double NOT NULL,
+  `cambioBS` double NOT NULL,
+  `totalBS` double NOT NULL,
+  `IVA` double NOT NULL,
+  `status` varchar(1) NOT NULL
+)
+
+INSERT INTO `boletoscine` VALUES (1234,'Destino Final 6','V-30111222','Alejandro','De La Vega','H',20,'A','L',2,6,2025,2,3,3,3,9,1.44,'A'),(5678,'Misión Imposible 8','V-30333444','Luis','Miguel','H',56,'I','L',31,5,2024,5,5,12.5,12,150,24,'A'),(9999,'Miku No Puede Cantar','V-30555666','Bryan','Bocaranda','H',34,'A','J',6,5,2025,7,5,24.5,112.9,2766.05,442.56800000000004,'A'),(7777,'Minecraft','V-32908233','Felipe','Rodríguez','H',16,'A','Mar',5,6,2025,5,6,22.5,99.45,2237.625,358.02,'A');
